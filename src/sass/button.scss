@@ -1,0 +1,57 @@
+@import '../sass/mixins.scss';
+@import '../sass/variable.scss';
+
+
+.btn-header{
+    &,
+    &:link,
+    &:visited {
+        color:$gold;
+        border: 1px solid purple;
+        background-color:$secondaryColor;
+        border-radius: 15px;
+        padding: 10px 30px;
+        font-size:1.5rem;
+        margin-top: 5px;
+        font-weight:700;
+
+        @include respond(desktop){
+            font-size: 2rem;
+            font-weight:bold;
+        }
+    }
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba(rgb(17, 16, 16),.2);
+        background-color:purple;
+        text-decoration:none;
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 1;
+        }
+    }
+}
+
+.submit-blog{
+    cursor: pointer;
+    border-radius: 5em;
+    background: linear-gradient(to right, rgb(178, 82, 223), rgb(76, 5, 97));
+    border: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    display:flex;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    font-size: 1.6rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    color:white;
+    margin-top: 1rem;
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(black, .15);
+        cursor:pointer;
+  }
+}

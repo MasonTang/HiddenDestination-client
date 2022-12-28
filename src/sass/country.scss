@@ -1,0 +1,39 @@
+@import '../sass/variable.scss';
+@import '../sass/mixins.scss';
+@import '../sass/cssreset.scss';
+
+
+.city-search-form {
+    padding-top: 1.5rem;
+
+    h1{
+        font-size: 3rem;
+        display:flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
+
+.city-search{
+
+    @include respond(tablet-horizontal){
+        display:flex;
+    }
+
+    &-form{
+        @include respond(tablet-horizontal){
+            width: 80%;
+        }
+    }
+}
+
+
+.unsplash{
+    width: 100%;
+    margin-top: 1rem;
+
+    @include respond(tablet-horizontal){
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+}

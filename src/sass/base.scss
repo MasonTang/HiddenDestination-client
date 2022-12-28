@@ -1,0 +1,62 @@
+@import '../sass/mixins.scss';
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+body {
+	font-weight:400;
+	line-height: 1.7;
+	color: black;
+	box-sizing: border-box;
+	
+	
+
+	@include respond(mobile){
+		font-size: 1.4rem;
+	}
+	@include respond(tablet){
+		font-size: 1.6rem;
+	}
+	@include respond(tablet-horizontal){
+		font-size: 1.8rem;
+	}
+	@include respond(desktop){
+		font-size: 2rem;
+	}
+	@include respond(desktop-wide){
+		font-size: 2.2rem;
+	}
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.site-container{
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content{
+	flex:1;
+}
+
+.margin-small{
+	margin-top: 1rem;
+}
+
+.margin-medium{
+	margin-top: 1.5rem;
+}
+
+.margin-large{
+	margin-top: 2rem;
+}

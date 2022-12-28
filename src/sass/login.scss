@@ -1,0 +1,109 @@
+@import '../sass/variable.scss';
+@import '../sass/mixins.scss';
+
+.login-page{
+    background-color: $secondaryColor;
+    height: 150vh;
+
+    @include respond(tablet-large){
+        height: 150vh; 
+    }
+}
+
+.login{
+    height: 50rem;
+    background-color: white;
+    width:90%;
+    margin: 3vh auto;
+    border-radius: 2rem;
+    color:$secondaryColor;
+
+    @include respond(tablet-large){
+        width: 40%;
+        height: 70vh; 
+    }
+}
+
+.flex-login{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 20%;
+
+    @include respond(tablet-large){
+        padding-top: 4%; 
+    }
+}
+
+.email{
+    margin-top:2rem;
+    width: 100%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 1,2rem;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: .8rem 5.1rem;
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.signup{
+    padding-top: 2rem;
+}
+
+.submit{
+    cursor: pointer;
+    border-radius: 5em;
+    background: linear-gradient(to right, rgb(178, 82, 223), rgb(76, 5, 97));
+    border: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    font-size: 1.6rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    color:white;
+    margin-top: 1rem;
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(black, .15);
+        cursor:pointer;
+  }
+}
+
+.submit-profile{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: linear-gradient(to right, rgb(178, 82, 223), rgb(76, 5, 97));
+    border: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    margin-left: .9rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    font-size: 1.2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    color:white;
+    margin-top: 1rem;
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(black, .15);
+        cursor:pointer;
+  }
+}

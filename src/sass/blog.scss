@@ -1,0 +1,36 @@
+@import '../sass/variable.scss';
+@import '../sass/mixins.scss';
+@import '../sass/cssreset.scss';
+
+.site-content {
+
+    h1{
+        display:flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    &-flex{
+
+        @include respond(tablet){
+            display:flex;
+        }
+    }
+
+    &-blogpost{
+        width: 100%;
+
+        @include respond(tablet){
+            width: 70%;
+        }
+    
+        p{
+            padding-right: 1rem;
+        }
+    }
+
+}
+
+.blue {
+    color: blue;
+}

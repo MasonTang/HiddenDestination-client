@@ -1,0 +1,29 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	box-sizing: border-box;
+}
+
+html{
+	font-size:62.5%;
+}
+
+*, *:before, *:after{
+box-sizing: inherit;
+}
+
+a{
+	color:inherit;
+}
+
+li{
+	list-style: none;
+}
+	

@@ -1,0 +1,9 @@
+@import '../sass/mixins.scss';
+
+.logo{
+    height: 11vh;
+
+    @include respond(tablet-large){
+        height: 13vh;
+    }
+}
