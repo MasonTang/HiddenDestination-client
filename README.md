@@ -13,6 +13,11 @@ Users can register for a new account by entering their email, username and passw
 
 ![Register Page](/public/images/ScreenShots/register.jpg)
 
+## Login Page
+Users can login using their email and password. After the user is logged in, the user is redirected to the destination page.
+
+![Login Page](/public/images/ScreenShots/login.jpg)
+
 ## Destination Page
 Users can click on different continents and countries to find their next destination.
 
@@ -23,22 +28,26 @@ Users can click on cities that have blog post.
 
 ![City](public/images/ScreenShots/city.jpg) 
 
+## Create Blog
+Users can create blogs from any city.
+
+![Create](public/images/ScreenShots/create.jpg)
+
 ## Blogs
 Users can view blogs from that city.
+
 ![Blogs](public/images/ScreenShots/blog.jpg)
+
 
 ## Technologies
 * HTML
 * CSS
 * JavaScript
-* jQuery
+* React
 * Node.js
 * Express
 * MongoDB
 * Mongoose
-* Mocha
-* Chai
-* Chai-http
 
 ## Author
 Mason Tang
